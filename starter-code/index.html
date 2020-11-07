@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <header clas="header-grid">
-      <nav>      
-        <div class="searchBar">      
-          <img src="images/logo.png" alt="">          
-          <input type="text" placeholder="Discover...">   
-          <p>... <a href="#">Login</a></p>
-        </div> 
-        <div class="menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Tech</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="#">Podcasts</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Bots</a></li>
-            <li><a href="#">Developer Tools</a></li>
-            <li><a href="#">iMessage Apps</a></li>
-            <li><a href="#">iPhone</a></li>
-            <li><a href="#">Photography Tools</a></li>
-          </ul>
-          <img src="images/arrow-prev.png" alt=>
-          <img src="images/arrow-next.png" alt=>
-        </div>     
-      </nav>
-    </header>
-    <main class="main">
-      <section>
-        <h2>Popular this week</h2>
-      </section>
-      <section>
-        <h2>Today</h2>
-      </section>
-    </main>
-    
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header clas="header-grid">
+        <nav>
+          <div class="searchBar">
+            <img src="images/logo.png" alt="" />
+            <input type="text" placeholder="Discover..." />
+            <p>... <a href="#">Login</a></p>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Podcasts</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Bots</a></li>
+              <li><a href="#">Developer Tools</a></li>
+              <li><a href="#">iMessage Apps</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Photography Tools</a></li>
+            </ul>
+            <img src="images/arrow-prev.png" alt=> <img
+            src="images/arrow-next.png" alt=>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section>
+          <div class="title">
+            <h2>Popular this week</h2>
+            <img src="images/close.png" alt="" />
+          </div>
+          <article>
+            <img src="images/popular-this-week/app-1.png" alt="">
+            <ul>
+              <li><p>Duolingo Bots</p></li>
+              <li><p>Al-powered characters to teach language conversation</p></li>
+              <li><span><img src="images/votes.png" alt="">1460</span><span><img src="images/comments.png" alt="">49</span></li>
+            </ul>                      
+          </article>
+          <article>
+            <img src="images/popular-this-week/app-2.png" alt="">
+            <ul>
+              <li><p>Tribe 2.0</p></li>
+              <li><p>Introducing Augmented Messaging</p></li>
+              <li><span><img src="images/votes.png" alt="">1465</span><span><img src="images/comments.png" alt="">188</span></li>
+            </ul>  
+          </article>
+          <article>
+            <img src="images/popular-this-week/app-3.png" alt="">
+            <ul>
+              <li><p>Workplace by Facebook</p></li>
+              <li><p>Connect everyone in your company and turn ideas into action</p></li>
+              <li><span><img src="images/votes.png" alt="">1003</span><span><img src="images/comments.png" alt="">80</span></li>
+            </ul>  
+            <p><center><img src="images/arrow-down.png" alt="">Show More</center></p>
+          </article>
+        </section>
+        <section>
+          <h2>Today</h2>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

@@ -76,3 +76,31 @@ nav p{
 .main{
   border:1px solid;
 }
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.title h2{
+  width:60%;
+}
+.title img{
+  margin-top: 19px;
+  width:10px;
+  height:10px;
+  margin-right: 5px;
+}
+
+article{
+  display: flex;
+}
+
+article ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+  font-size: 12px;
+}
+
