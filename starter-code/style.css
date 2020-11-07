@@ -3,21 +3,14 @@ body {
   padding: 0;
 }
 
+/* ----- NavBar ----- */
 nav {
-  border: 1px solid;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 }
 
 nav img:nth-child(1) {
   width: 30px;
-}
-
-nav img:nth-child(2) {
-  width: 20px;
-  height: 20px;
-  margin-top: 5px;
-  margin-left: -80px;
 }
 
 nav input {
@@ -30,16 +23,58 @@ nav input {
   background-position: left;
 }
 
-nav div {
+.searchBar {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid black;
 }
 
 nav p {
   margin-top: 4px;
   margin-right: 4px;
   height: 2px;
+}
+
+.menu {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.menu ul {
+  overflow: hidden;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  /*margin-left: 15px;*/
+  height: 20px;
+  width: 90%;
+}
+
+.menu ul li {
+  display: inline-block;
+  height: 40px;
+}
+
+.menu ul li a {
+  margin-left: 13px;
+}
+
+.menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.menu img {
+  width: 18px;
+  height: 14px;
+  margin-top: 4px;
+}
+
+/* ----- Main ----- */
+.main {
+  border: 1px solid;
 }
 
 /*# sourceMappingURL=style.css.map */
