@@ -1,45 +1,44 @@
-body {
-  margin: 0;
-  padding: 0;
+body{
+    margin: 0;
+    padding: 0;    
 }
 
-nav {
-  border: 1px solid;
+nav{
+  border:1px solid;
   display: flex;
   flex-flow: row;
+  
 }
 
-nav img:nth-child(1) {
-  width: 30px;
+nav img:nth-child(1){
+  width:30px;
 }
 
-nav img:nth-child(2) {
-  width: 20px;
+nav img:nth-child(2){
+  width:20px;
   height: 20px;
   margin-top: 5px;
   margin-left: -80px;
 }
 
-nav input {
-  border: 0;
+nav input{
+  border:0;
   padding-left: 25px;
   font-size: 10px;
-  width: 68%;
+  width:68%;
   background-image: url(images/search.png);
   background-repeat: no-repeat;
   background-position: left;
 }
 
-nav div {
-  width: 100%;
-  display: flex;
+nav div{
+  width:100%;
+  display: flex; 
   justify-content: space-between;
 }
 
-nav p {
+nav p{  
   margin-top: 4px;
-  margin-right: 4px;
-  height: 2px;
+  margin-right:4px;
+  height: 2px;  
 }
-
-/*# sourceMappingURL=style.css.map */
