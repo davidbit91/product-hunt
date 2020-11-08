@@ -31,41 +31,59 @@
             </ul>
             <img src="images/arrow-prev.png" alt=> <img
             src="images/arrow-next.png" alt=>
-          </div>
+          </div>          
         </nav>
       </header>
       <main class="main">
+        <div class="welcome">
+          <p><img src="images/Emoji_u1f44b.svg.png" alt=""> Welcome to Product Hunt Get the best new products in your inbox, daily.</p><img src="images/close.png" alt="">
+          <input type="text" placeholder="Your mail"><button>Subscribe</button>
+        </div>
         <section>
           <div class="title">
             <h2>Popular this week</h2>
             <img src="images/close.png" alt="" />
           </div>
           <article class="popularArticle">
-            <img src="images/popular-this-week/app-1.png" alt="" />
+            <img
+              src="images/popular-this-week/app-1.png"
+              alt=""
+              class="imgArticle"
+            />
             <ul>
               <li><p>Duolingo Bots</p></li>
               <li>
                 <p>Al-powered characters to teach language conversation</p>
               </li>
               <li>
-                <span><img src="images/votes.png" alt="" />1460</span
-                ><span><img src="images/comments.png" alt="" />49</span>
+                <span><img src="images/votes.png" alt="" />1460</span>
+                <span><img src="images/comments.png" alt="" />49</span>
+                <span>IPHONE</span>
               </li>
             </ul>
           </article>
           <article class="popularArticle">
-            <img src="images/popular-this-week/app-2.png" alt="" />
+            <img
+              src="images/popular-this-week/app-2.png"
+              alt=""
+              class="imgArticle"
+            />
             <ul>
               <li><p>Tribe 2.0</p></li>
               <li><p>Introducing Augmented Messaging</p></li>
               <li>
-                <span><img src="images/votes.png" alt="" />1465</span
-                ><span><img src="images/comments.png" alt="" />188</span>
+                <span><img src="images/votes.png" alt="" />1465</span>
+                <span><img src="images/comments.png" alt="" />188</span>
+                <span>ANDROID</span>
               </li>
             </ul>
           </article>
           <article class="popularArticle">
-            <img src="images/popular-this-week/app-3.png" alt="" />
+            <img
+              src="images/popular-this-week/app-3.png"
+              alt=""
+              class="imgArticle"
+            />
             <ul>
               <li><p>Workplace by Facebook</p></li>
               <li>
@@ -74,8 +92,9 @@
                 </p>
               </li>
               <li>
-                <span><img src="images/votes.png" alt="" />1003</span
-                ><span><img src="images/comments.png" alt="" />80</span>
+                <span><img src="images/votes.png" alt="" />1003</span>
+                <span><img src="images/comments.png" alt="" />80</span>
+                <span>ANDROID</span>
               </li>
             </ul>
             <p>
@@ -91,40 +110,61 @@
             <p><a href="#">POPULAR</a>|<a href="#">NEWEST</a></p>
           </div>
           <article class="popularArticle">
-            <img src="images/today/app-1.png" alt="">
+            <img src="images/today/app-1.png" alt="" class="imgArticle" />
             <ul>
               <li><p>Sprayscape</p></li>
-              <li><p>A perfectly imperfect VR-ish camera experiment, by Google</p></li>
               <li>
-                <span><img src="images/votes.png" alt="" />82</span
-                ><span><img src="images/comments.png" alt="" />8</span>
+                <p>A perfectly imperfect VR-ish camera experiment, by Google</p>
+              </li>
+              <li>
+                <span><img src="images/votes.png" alt="" />82</span>
+                <span><img src="images/comments.png" alt="" />8</span>
+                <span>ANDROID</span>
               </li>
             </ul>
           </article>
           <article class="popularArticle">
-            <img src="images/today/app-2.png" alt="">
+            <img src="images/today/app-2.png" alt="" class="imgArticle" />
             <ul>
               <li><p>Ask Gary Vee</p></li>
-              <li><p>The unofficial gGary Vee persona chatbot on Messenger!</p></li>
               <li>
-                <span><img src="images/votes.png" alt="" />21</span
-                ><span><img src="images/comments.png" alt="" />9</span>
+                <p>The unofficial gGary Vee persona chatbot on Messenger!</p>
+              </li>
+              <li>
+                <span><img src="images/votes.png" alt="" />21</span>
+                <span><img src="images/comments.png" alt="" />9</span>
+                <span>GET SHIT DONE</span>
               </li>
             </ul>
           </article>
           <article class="popularArticle">
-            <img src="images/today/app-3.png" alt="">
+            <img src="images/today/app-3.png" alt="" class="imgArticle" />
             <ul>
               <li><p>The Electron Wheel</p></li>
               <li><p>Turn your standard bicycle into an electric bike.</p></li>
               <li>
-                <span><img src="images/votes.png" alt="" />23</span
-                ><span><img src="images/comments.png" alt="" />2</span>
+                <span><img src="images/votes.png" alt="" />23</span>
+                <span><img src="images/comments.png" alt="" />2</span>
               </li>
             </ul>
-          </article>        
+          </article>
         </section>
       </main>
     </div>
   </body>
 </html>
+
+<script>
+  let v = document.getElementsByTagName("input")[0];
+  var widerScreenWidth = window.matchMedia("(min-width: 599px)");
+
+  function changePlaceholder() {
+    if (widerScreenWidth.matches) {
+      v.placeholder = "Discover your next favorite thing...";
+    } else {
+      v.placeholder = "Discover...";
+    }
+  }
+
+  window.onload = changePlaceholder;
+</script>

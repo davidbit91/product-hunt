@@ -73,6 +73,20 @@ nav p {
 }
 
 /* ----- Main ----- */
+.welcome {
+  display: none;
+  background-color: white;
+}
+
+.welcome p {
+  width: 90%;
+  padding: 0;
+}
+
+.welcome img {
+  width: 20px;
+}
+
 .main {
   border: 1px solid;
 }
@@ -96,6 +110,18 @@ nav p {
 
 .popularArticle {
   display: flex;
+  margin-left: 8px;
+}
+
+.imgArticle {
+  width: 70px;
+  height: 70px;
+  margin-top: 12px;
+}
+
+.popularArticle p {
+  margin-bottom: 2px;
+  margin-top: 10px;
 }
 
 .popularArticle ul {
@@ -103,6 +129,80 @@ nav p {
   padding: 0;
   list-style: none;
   font-size: 12px;
+  width: 100%;
+  padding-left: 16px;
+}
+
+.popularArticle ul li > span:nth-child(1) {
+  border: 1px solid;
+  margin-right: 15px;
+}
+
+.popularArticle ul li > span:nth-child(2) {
+  border: 1px solid;
+  display: inline-block;
+  width: 40px;
+  text-align: center;
+}
+
+.popularArticle ul li > span:nth-child(3) {
+  float: right;
+  display: none;
+  margin-right: 15px;
+  background-color: gainsboro;
+}
+
+.popularArticle ul li > span:nth-child(3)::after {
+  content: "+2";
+}
+
+@media (min-width: 599px) and (max-width: 767px) {
+  .menu {
+    height: 40px;
+    justify-content: center;
+  }
+
+  .menu ul > li {
+    margin-top: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    background-color: gray;
+  }
+
+  .welcome {
+    display: inline-block;
+    margin-left: 4%;
+    width: 91%;
+    margin-top: 4%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .welcome img:nth-child(2) {
+    width: 10px;
+    float: right;
+    margin-right: 15px;
+    margin-top: -40px;
+  }
+
+  section {
+    margin-left: 4%;
+    width: 91%;
+    background-color: white;
+  }
+
+  section:nth-child(2) {
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+
+  .popularArticle ul li > span:nth-child(3) {
+    display: inline-block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
